@@ -1,0 +1,30 @@
+C:\Users\Beri\Downloads\SimpleLoader-master\GitHub SimpleLoader\bin\Debug\SimpleLoader.exe.config
+C:\Users\Beri\Downloads\SimpleLoader-master\GitHub SimpleLoader\bin\Debug\SimpleLoader.exe
+C:\Users\Beri\Downloads\SimpleLoader-master\GitHub SimpleLoader\bin\Debug\SimpleLoader.pdb
+C:\Users\Beri\Downloads\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\Loader.csprojAssemblyReference.cache
+C:\Users\Beri\Downloads\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\Beri\Downloads\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\SimpleLoader.Properties.Resources.resources
+C:\Users\Beri\Downloads\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\Loader.csproj.GenerateResource.cache
+C:\Users\Beri\Downloads\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\Loader.csproj.CoreCompileInputs.cache
+C:\Users\Beri\Downloads\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\SimpleLoader.exe
+C:\Users\Beri\Downloads\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\SimpleLoader.pdb
+C:\Users\Beri\Documents\cod'in\loader\SimpleLoader-master\GitHub SimpleLoader\bin\Debug\SimpleLoader.exe.config
+C:\Users\Beri\Documents\cod'in\loader\SimpleLoader-master\GitHub SimpleLoader\bin\Debug\SimpleLoader.exe
+C:\Users\Beri\Documents\cod'in\loader\SimpleLoader-master\GitHub SimpleLoader\bin\Debug\SimpleLoader.pdb
+C:\Users\Beri\Documents\cod'in\loader\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\Loader.csprojAssemblyReference.cache
+C:\Users\Beri\Documents\cod'in\loader\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\Beri\Documents\cod'in\loader\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\SimpleLoader.Properties.Resources.resources
+C:\Users\Beri\Documents\cod'in\loader\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\Loader.csproj.GenerateResource.cache
+C:\Users\Beri\Documents\cod'in\loader\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\Loader.csproj.CoreCompileInputs.cache
+C:\Users\Beri\Documents\cod'in\loader\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\SimpleLoader.exe
+C:\Users\Beri\Documents\cod'in\loader\SimpleLoader-master\GitHub SimpleLoader\obj\Debug\SimpleLoader.pdb
+C:\Users\Beri\Documents\GitHub\fortheboys\SimpleLoader no hwid\GitHub SimpleLoader\obj\Debug\Loader.csprojAssemblyReference.cache
+C:\Users\Beri\Documents\GitHub\fortheboys\SimpleLoader no hwid\GitHub SimpleLoader\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\Beri\Documents\GitHub\fortheboys\SimpleLoader no hwid\GitHub SimpleLoader\obj\Debug\SimpleLoader.Properties.Resources.resources
+C:\Users\Beri\Documents\GitHub\fortheboys\SimpleLoader no hwid\GitHub SimpleLoader\obj\Debug\Loader.csproj.GenerateResource.cache
+C:\Users\Beri\Documents\GitHub\fortheboys\SimpleLoader no hwid\GitHub SimpleLoader\obj\Debug\Loader.csproj.CoreCompileInputs.cache
+C:\Users\Beri\Documents\GitHub\fortheboys\SimpleLoader no hwid\GitHub SimpleLoader\obj\Debug\SimpleLoader.exe
+C:\Users\Beri\Documents\GitHub\fortheboys\SimpleLoader no hwid\GitHub SimpleLoader\obj\Debug\SimpleLoader.pdb
+C:\Users\Beri\Documents\GitHub\fortheboys\SimpleLoader no hwid\GitHub SimpleLoader\bin\Debug\SimpleLoader.exe.config
+C:\Users\Beri\Documents\GitHub\fortheboys\SimpleLoader no hwid\GitHub SimpleLoader\bin\Debug\SimpleLoader.exe
+C:\Users\Beri\Documents\GitHub\fortheboys\SimpleLoader no hwid\GitHub SimpleLoader\bin\Debug\SimpleLoader.pdb
