@@ -8,5 +8,5 @@ Fork of [SimpleLoader](https://github.com/WilsonPublic/SimpleLoader) featuring [
 
 ### todo
 
-* Make the whole process in one button (bypass vac, launch steam, launch cs, inject otc3)
-* Have a list of .dll ready to be injected (otc2, otc3, mutiny, fluidaim, everything changer... with their following uc / github link
+* Making the whole process in one button (bypass vac, launch steam, launch cs, inject otc3)
+* Have a list of .dll ready to be injected (otc2, otc3, mutiny, fluidaim, everything changer... with their following uc / github link)
