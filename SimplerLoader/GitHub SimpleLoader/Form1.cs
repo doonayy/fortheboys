@@ -3,13 +3,7 @@
 //I recommend using Dot Net Reactor to protect your programs
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ManualMapInjection.Injection;
 using System.Net;
