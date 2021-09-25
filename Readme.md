@@ -7,4 +7,5 @@ Fork of [SimpleLoader](https://github.com/WilsonPublic/SimpleLoader) featuring [
 ## [Download](https://github.com/doonayy/fortheboys/releases/download/v2/SimpleLoader.exe)
 
 If the "one-button injection loader doesn't work, check the release section and use the older one. 
+
 I need to fix the loader to wait for the csgo process and not just wait...
