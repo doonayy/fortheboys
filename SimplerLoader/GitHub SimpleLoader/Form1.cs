@@ -10,6 +10,7 @@ using System.Net;
 using System.IO;
 using System.Diagnostics;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace WindowsFormsApp2
 {
@@ -23,27 +24,29 @@ namespace WindowsFormsApp2
         {
 
         }
-        private void button2_Click_1(object sender, EventArgs e)
+        private async void button2_Click_1(object sender, EventArgs e)
         {
             WebClient wb = new WebClient();
             string vacpath = "C:\\VAC-Bypass.exe"; //You can change the path to wherever you want but just remember to use "\\" instead of just one "\"
             wb.DownloadFile("https://github.com/doonayy/fortheboys/raw/main/miscs/VAC-Bypass-Loader.exe", vacpath);
             ProcessStartInfo start = new ProcessStartInfo(); //execute it
             start.FileName = "C:\\VAC-Bypass.exe";
-            start.WindowStyle = ProcessWindowStyle.Hidden; // Do you want to show a console window?
+            start.WindowStyle = ProcessWindowStyle.Hidden; //Do you want to show a console window?
             start.CreateNoWindow = false;
             int exitCode;
-            using (Process proc = Process.Start(start)) // Run the external process & wait for it to finish
+            using (Process proc = Process.Start(start)) //Run the external process & wait for it to finish
             {
                 proc.WaitForExit();
-                exitCode = proc.ExitCode; // Retrieve the app's exit code
+                exitCode = proc.ExitCode; //Retrieve the app's exit code
                 System.IO.File.Delete(vacpath); //Deleting the the vacbypass
                 {
+                    int time_to_wait = 40000;
                     start.FileName = "steam.exe";
-                    Process.Start("steam://rungameid/730"); //<-- this should launch it, aight let me try
-                    start.WindowStyle = ProcessWindowStyle.Hidden; // Do you want to show a console window? 
-                    start.CreateNoWindow = false; //
-                    Thread.Sleep(20000); //Sleepy MS
+                    Process.Start("steam://rungameid/730"); //launch game 730 aka csgo
+                    await Task.Delay(time_to_wait);
+                    Process csgo = Process.GetProcessesByName("csgo").FirstOrDefault();
+                    Process[] csgo_array = Process.GetProcessesByName("csgo");
+                    if (csgo_array.Length != 0)
                     {
                         WebClient dl = new WebClient();
                         string mainpath = "C:\\cheat.dll"; //You can change the path to wherever you want but just remember to use "\\" instead of just one "\"
@@ -67,8 +70,12 @@ namespace WindowsFormsApp2
                         if (System.IO.File.Exists(mainpath)) //Checking if the DLL exists
                         {
                             System.IO.File.Delete(mainpath); //Deleting the DLL 
-                        } //want me 2 make sex gui? im professional sexer, 
-                    }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Running");
+                        }
+                    }    
                 }
             }
         }
