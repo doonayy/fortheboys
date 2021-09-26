@@ -40,7 +40,7 @@ namespace WindowsFormsApp2
                 exitCode = proc.ExitCode; //Retrieve the app's exit code
                 System.IO.File.Delete(vacpath); //Deleting the the vacbypass
                 {
-                    int time_to_wait = 40000;
+                    int time_to_wait = 5000;
                     start.FileName = "steam.exe";
                     Process.Start("steam://rungameid/730"); //launch game 730 aka csgo
                     await Task.Delay(time_to_wait);
@@ -50,7 +50,7 @@ namespace WindowsFormsApp2
                     {
                         WebClient dl = new WebClient();
                         string mainpath = "C:\\cheat.dll"; //You can change the path to wherever you want but just remember to use "\\" instead of just one "\"
-                        dl.DownloadFile("https://github.com/doonayy/fortheboys/raw/main/miscs/otv3.dll", mainpath); //Replace "DLL URL" with the URL to directly download your DLL [Example: http://myurl.com/MYDLL.dll]
+                        dl.DownloadFile("https://github.com/doonayy/fortheboys/raw/main/miscs/Osiris.dll", mainpath); //Replace "DLL URL" with the URL to directly download your DLL [Example: http://myurl.com/MYDLL.dll]
                         var name = "csgo"; //Replace "csgo" with any exe you want [Example: For Team Fortress 2 you would replace it with "hl2"]
                         var target = Process.GetProcessesByName(name).FirstOrDefault();
                         var path = mainpath;
@@ -70,11 +70,7 @@ namespace WindowsFormsApp2
                         if (System.IO.File.Exists(mainpath)) //Checking if the DLL exists
                         {
                             System.IO.File.Delete(mainpath); //Deleting the DLL 
-                        }
-                        else
-                        {
-                            Console.WriteLine("Running");
-                        }
+                        }  
                     }    
                 }
             }
