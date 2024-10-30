@@ -7,4 +7,4 @@ Fork of [SimpleLoader](https://github.com/WilsonPublic/SimpleLoader) featuring [
 
 ## [Download](https://github.com/doonayy/fortheboys/releases)
 
-If you neeld help elondogg (don't add me for telling me that it doesn't work)
+If you neeld help, add me on discord : elondogg
